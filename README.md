@@ -53,7 +53,7 @@ function AboutPage() {
 
 ### Rendering lists
 
-You will rely on JavaScript features like for loop and the array map() function to render lists of components.
+You will rely on JavaScript features like `for loop` and the array `map()` function to render lists of components.
 
 For example, let’s say you have an array of products:
 
@@ -63,7 +63,7 @@ const products = [
 { title: 'Apple', id: 3 },
 ];
 
-Inside your component, use the map() function to transform an array of products into an array of <li> items:
+Inside your component, use the` map()` function to transform an array of products into an array of `<li>` items:
 
 ```
 const listItems = products.map(product =>
