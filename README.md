@@ -28,9 +28,9 @@ React apps are made out of components. A component is a piece of the UI (user in
 ### JSX
 
 JSX is stricter than HTML.
-You have to close tags like <br />.
+You have to close tags like.
 Your component also can’t return multiple JSX tags.
-You have to wrap them into a shared parent, like a <div>...</div> or an empty <>...</> wrapper
+You have to wrap them into a shared parent, like a `<div>...</div>` or an empty <>...</> wrapper
 
 ```
 function AboutPage() {
