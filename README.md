@@ -108,4 +108,4 @@ function MyButton() {
 }
 ```
 
-**Notice how onClick={handleClick} has no parentheses at the end!**
+**Notice how `onClick={handleClick}` has no parentheses at the end!**
