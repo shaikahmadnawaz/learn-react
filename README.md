@@ -63,16 +63,37 @@ const products = [
 { title: 'Apple', id: 3 },
 ];
 
-Inside your component, use the` map()` function to transform an array of products into an array of `<li>` items:
+Inside your component, use the `map()` function to transform an array of products into an array of `<li>` items:
 
 ```
-const listItems = products.map(product =>
-  <li key={product.id}>
-    {product.title}
-  </li>
-);
+import React from "react";
+const RenderingLists = () => {
+  const names = [
+    {
+      name: "Nawaz",
+      id: 1,
+    },
+    {
+      name: "Shaik",
+      id: 2,
+    },
+  ];
 
-return (
-  <ul>{listItems}</ul>
-);
+  return (
+    <div>
+      <ul>
+        {names.map((val, key) => {
+          return (
+            <li key={key}>
+              <div>{val.name}</div>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+};
+
+export default RenderingLists;
+
 ```
