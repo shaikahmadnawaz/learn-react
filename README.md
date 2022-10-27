@@ -55,14 +55,6 @@ function AboutPage() {
 
 You will rely on JavaScript features like `for loop` and the array `map()` function to render lists of components.
 
-For example, let’s say you have an array of products:
-
-const products = [
-{ title: 'Cabbage', id: 1 },
-{ title: 'Garlic', id: 2 },
-{ title: 'Apple', id: 3 },
-];
-
 Inside your component, use the `map()` function to transform an array of products into an array of `<li>` items:
 
 ```
@@ -97,3 +89,23 @@ const RenderingLists = () => {
 export default RenderingLists;
 
 ```
+
+### Responding to events
+
+You can respond to events by declaring event handler functions inside your components:
+
+```
+function MyButton() {
+  function handleClick() {
+    alert('You clicked me!');
+  }
+
+  return (
+    <button onClick={handleClick}>
+      Click me
+    </button>
+  );
+}
+```
+
+**Notice how onClick={handleClick} has no parentheses at the end!**
